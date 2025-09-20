@@ -1,0 +1,34 @@
+services:
+  # Frontend Service
+  - type: web
+    name: agrico-frontend
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run preview
+    envVars:
+      - key: VITE_API_URL
+        value: https://agrico-backend.onrender.com/api
+      - key: VITE_SUPABASE_URL
+        value: https://ycorozkbfeqwybujwnaz.supabase.co
+      - key: VITE_SUPABASE_ANON_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inljb3JvemtiZmVxd3lidWp3bmF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc2NjE0NjAsImV4cCI6MjA3MzIzNzQ2MH0.YourAnonKeyHere
+      - key: VITE_CLERK_PUBLISHABLE_KEY
+        value: your-clerk-publishable-key-here
+
+  # Backend Service
+  - type: web
+    name: agrico-backend
+    env: node
+    plan: free
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: SUPABASE_URL
+        value: https://ycorozkbfeqwybujwnaz.supabase.co
+      - key: SUPABASE_SERVICE_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inljb3JvemtiZmVxd3lidWp3bmF6Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1NzY2MTQ2MCwiZXhwIjoyMDczMjM3NDYwfQ.Uk8pYd76w-UEEzLmnXrTJEMdo86sB71iOA1vnQI8UoQ
