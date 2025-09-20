@@ -68,7 +68,7 @@ This guide will walk you through deploying your Agrico application to Vercel ste
    SUPABASE_SERVICE_KEY = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inljb3JvemtiZmVxd3lidWp3bmF6Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1NzY2MTQ2MCwiZXhwIjoyMDczMjM3NDYwfQ.Uk8pYd76w-UEEzLmnXrTJEMdo86sB71iOA1vnQI8UoQ
    VITE_API_URL = /api
    VITE_SUPABASE_URL = https://ycorozkbfeqwybujwnaz.supabase.co
-   VITE_SUPABASE_ANON_KEY = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inljb3JvemtiZmVxd3lidWp3bmF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc2NjE0NjAsImV4cCI6MjA3MzIzNzQ2MH0.YourAnonKeyHere
+   VITE_SUPABASE_ANON_KEY = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNlcG1obXRtb2x5aWNmdXh3b3lnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTgzNTIzMzcsImV4cCI6MjA3MzkyODMzN30.9S3vi1ZW8u-vw5UfPquHULWcdwxTf3f5u-t1Nmy54O4
    VITE_CLERK_PUBLISHABLE_KEY = your-clerk-publishable-key-here
    NODE_ENV = production
    ```
