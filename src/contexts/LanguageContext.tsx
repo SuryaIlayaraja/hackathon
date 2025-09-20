@@ -1239,7 +1239,6 @@ const translations = {
     'banking.savingsAccount': 'சேமிப்பு கணக்கு',
     'banking.currentAccount': 'நடப்பு கணக்கு',
     'banking.fixedDeposit': 'நிலையான வைப்பு',
-    'banking.recurringDeposit': 'தொடர்ச்சியான வைப்பு',
   }
 };
 
